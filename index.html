@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <div class="difficulty" id="difficulty">
+        <h1>Choose difficulty</h1>
+        <button  onclick="start('easy')">Easy</button>
+        <button  onclick="start('medium')">Medium</button>
+        <button  onclick="start('hard')">Hard</button>
+    </div>
+    <div id="quiz" style="display: none;">
+        <div id="question"></div>
+        <div id = "options"></div>
+        <button  onclick="submitAnswer()">Next</button>
+    </div>
+    <div id ="result" style="display: none;">
+    <h1> Total Score : <span id = "score"></span></h1>
+    <button onclick="playAgain()" >Play Again</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
